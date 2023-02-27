@@ -157,5 +157,10 @@ const attempts = {
         c.lineTo(100, 70);
         c.stroke();
     },
-    
+    secondAttempt: () => {
+        c.beginPath();
+        c.moveTo(100, 70);
+        c.lineTo(200, 70);
+        c.stroke();
+    },
 }
