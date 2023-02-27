@@ -174,8 +174,15 @@ const attempts = {
         c.arc(200, 120, 20, 0, Math.PI * 2);
         c.stroke();
     },
+    fifthAttempt: () => {
+        c.beginPath();
+        c.moveTo(200, 140);
+        c.lineTo(200, 220);
+        c.stroke();
+    },
 }
 attempts.firstAttempt()
 attempts.secondAttempt()
 attempts.thirdAttempt()
 attempts.fourthAttempt();
+attempts.fifthAttempt()
