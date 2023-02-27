@@ -149,11 +149,13 @@ const categories = {
 }
 const canvas = document.getElementById("canvas");
 const c = canvas.getContext("2d");
-c.beginPath();
-c.moveTo(30,100);
-c.lineTo(30,30);
-c.stroke();
 
 const attempts = {
-    firstAttempt: 0,
+    firstAttempt: () => {
+        c.beginPath();
+        c.moveTo(100, 300);
+        c.lineTo(100, 70);
+        c.stroke();
+    },
+    
 }
