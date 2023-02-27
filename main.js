@@ -180,9 +180,16 @@ const attempts = {
         c.lineTo(200, 220);
         c.stroke();
     },
+    sixthAttempt: () => {
+        c.beginPath();
+        c.moveTo(200, 160);
+        c.lineTo(240, 140);
+        c.stroke();
+    },
 }
 attempts.firstAttempt()
 attempts.secondAttempt()
 attempts.thirdAttempt()
 attempts.fourthAttempt();
 attempts.fifthAttempt()
+attempts.sixthAttempt()
