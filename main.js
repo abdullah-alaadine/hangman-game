@@ -147,3 +147,13 @@ const categories = {
         'Adaline',   'Hayden',   'Joanna',  'Jocelyn',    'Lena',
         'Evie',      'Juliet',   'Fiona',   'Cataleya',   'Angelina']
 }
+const canvas = document.getElementById("canvas");
+const c = canvas.getContext("2d");
+c.beginPath();
+c.moveTo(30,100);
+c.lineTo(30,30);
+c.stroke();
+
+const attempts = {
+    firstAttempt: 0,
+}

@@ -3,12 +3,12 @@
     padding: 0;
 }
 body{
-    background-color: rgb(255, 11, 11);
+    background-color: rgb(99, 31, 31);
 }
 .game{
     background-color: rgb(243, 173, 173);
     display: flex;
-    /* text-align: center; */
+    min-width: 500px;
     width: 50%;
     margin: auto;
     flex-direction: column;
@@ -18,9 +18,9 @@ body{
 }
 canvas {
     position: relative;
-    width: 80%;
-    height: 80%;
-    border: 1px red dashed;
+    /* width: 80%;
+    height: 80%; */
+    border: 1px rgb(80, 25, 25) dashed;
 }
 .drawing{
     width: 100%;
