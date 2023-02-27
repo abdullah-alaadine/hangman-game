@@ -205,12 +205,3 @@ const attempts = {
         c.stroke();
     },
 }
-attempts.firstAttempt()
-attempts.secondAttempt()
-attempts.thirdAttempt()
-attempts.fourthAttempt()
-attempts.fifthAttempt()
-attempts.sixthAttempt()
-attempts.seventhAttempt()
-attempts.eighthAttempt()
-attempts.ninthAttempt()
