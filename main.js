@@ -163,4 +163,13 @@ const attempts = {
         c.lineTo(200, 70);
         c.stroke();
     },
+    thirdAttempt: () => {
+        c.beginPath();
+        c.moveTo(200, 70);
+        c.lineTo(200, 100);
+        c.stroke();
+    },
 }
+// attempts.firstAttempt()
+// attempts.secondAttempt()
+// attempts.thirdAttempt()
