@@ -218,12 +218,12 @@ alphabet.forEach(elem => {
         if(!theCorrectWord) return;
         let result = document.getElementById("word").textContent;
         const resultArr = result.split("");
+        result == theCorrectWord ? youWin(): null;
         let atLeastHeGuessedOne = false;
         console.log(elem, theCorrectWord)
         for(let i =0; i< theCorrectWord.length; i++){
             if(theCorrectWord[i] == elem || theCorrectWord[i] == elem.toUpperCase()){
                 atLeastHeGuessedOne = true;
-                // btn.style.display = "none";
                 resultArr[i] = theCorrectWord[i];
             }
         }
@@ -304,6 +304,12 @@ function select(selectedLetter){
 document.getElementById("restartGame").addEventListener("click", ()=> location.reload());
 function youLose(){
     alert("You lost! Try Again");
+    Array.from(document.getElementsByClassName("key")).forEach(elem => {
+        elem.disabled = "true";
+    })   
+}
+function youWin(){
+    alert("Congrats! You Win!");
     Array.from(document.getElementsByClassName("key")).forEach(elem => {
         elem.disabled = "true";
     })   
