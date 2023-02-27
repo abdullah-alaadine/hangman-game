@@ -147,6 +147,13 @@ const categories = {
         'Adaline',   'Hayden',   'Joanna',  'Jocelyn',    'Lena',
         'Evie',      'Juliet',   'Fiona',   'Cataleya',   'Angelina']
 }
+const keyboard = document.getElementById("keyboard");
+const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+alphabet.forEach(elem => {
+    const btn = document.createElement("button");
+    keyboard.appendChild(btn);
+    btn.addEventListener("click", select);
+})
 const canvas = document.getElementById("canvas");
 const c = canvas.getContext("2d");
 
@@ -207,6 +214,7 @@ const attempts = {
 }
 const startDiv = document.getElementById("start");
 const startGameBtn = document.getElementById("startGame");
+const word = document.getElementById("word");
 startGameBtn.addEventListener("click", () => {
     const choose = document.createElement("h2");
     choose.textContent = "Choose Category";
@@ -219,9 +227,17 @@ startGameBtn.addEventListener("click", () => {
     girlsName.textContent = "Girls Names";
     const div = document.createElement("div");
     div.style.cssText = "width: 60%; margin: auto; height: 40%; display: flex; flex-direction: column; justify-content: space-around;"
+    div.appendChild(choose);
     div.appendChild(countriesNames);
     div.appendChild(boysNames);
     div.appendChild(girlsName);
-    startDiv.appendChild(choose);
     startDiv.appendChild(div);
+    const dash = "__\t"
+    countriesNames.addEventListener("click", () => {
+        const x = Math.floor(Math.random() * categories.countriesNames.length);
+        const toBeGuessed = categories.countriesNames[x];
+        word.textContent = dash.repeat(toBeGuessed.length);
+    })
 })
+
+function select(){}
