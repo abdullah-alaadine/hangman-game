@@ -205,4 +205,23 @@ const attempts = {
         c.stroke();
     },
 }
-// &nbsp;
+const startDiv = document.getElementById("start");
+const startGameBtn = document.getElementById("startGame");
+startGameBtn.addEventListener("click", () => {
+    const choose = document.createElement("h2");
+    choose.textContent = "Choose Category";
+    startGameBtn.style.display = "none";
+    const countriesNames = document.createElement("button");
+    countriesNames.textContent = "Countries Names";
+    const boysNames = document.createElement("button");
+    boysNames.textContent = "Boys Names";
+    const girlsName = document.createElement("button");
+    girlsName.textContent = "Girls Names";
+    const div = document.createElement("div");
+    div.style.cssText = "width: 60%; margin: auto; height: 40%; display: flex; flex-direction: column; justify-content: space-around;"
+    div.appendChild(countriesNames);
+    div.appendChild(boysNames);
+    div.appendChild(girlsName);
+    startDiv.appendChild(choose);
+    startDiv.appendChild(div);
+})
