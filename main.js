@@ -1,5 +1,5 @@
 const categories = {
-    countriesNames: ['Afghanistan','Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia',    'Australia', 'Austria', 'Azerbaijan', 'The Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Burkina Faso', 'Burundi', 'Cabo Verde', 'Cambodia', 'Cameroon', 'Canada', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo, Democratic Republic of the', 'Congo Republic of the', 'Costa Rica', 'Côte divoire', 'Croatia', 'Cuba', 'Cyprus', 'Czech Republic', 'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic', 'East Timor', 'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia', 'Fiji', 'Finland', 'France', 'Gabon', 'The Gambia', 'Georgia', 'Germany', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Honduras', 'Hungary', 'Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Ireland', 'Italy', 'Jamaica', 'Japan', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', 'Korea, North', 'Korea, South', 'Kosovo', 'Kuwait', 'Kyrgyzstan', 'Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius', 'Mexico', 'Micronesia, Federated States of', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar', 'Namibia', 'Nauru', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'North Macedonia', 'Norway', 'Oman', 'Pakistan', 'Palau', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland', 'Portugal', 'Qatar', 'Romania', 'Russia', 'Rwanda', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Samoa', 'San Marino', 'Sao Tome and Principe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia', 'Solomon Islands', 'Somalia', 'South Africa', 'Spain', 'Sri Lanka', 'Sudan', 'Sudan, South', 'Suriname', 'Sweden', 'Switzerland', 'Syria', 'Taiwan', 'Tajikistan', 'Tanzania', 'Thailand', 'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan', 'Tuvalu', 'Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan', 'Vanuatu', 'Vatican City', 'Venezuela', 'Vietnam', 'Yemen', 'Zambia', 'Zimbabwe'],
+    countriesNames: ['Afghanistan','Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia',    'Australia', 'Austria', 'Azerbaijan', 'The Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Burkina Faso', 'Burundi', 'Cabo Verde', 'Cambodia', 'Cameroon', 'Canada', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo, Democratic Republic of the', 'Congo Republic of the', 'Costa Rica', 'Côte divoire', 'Croatia', 'Cuba', 'Cyprus', 'Czech Republic', 'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic', 'East Timor', 'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia', 'Fiji', 'Finland', 'France', 'Gabon', 'The Gambia', 'Georgia', 'Germany', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Honduras', 'Hungary', 'Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Ireland', 'Italy', 'Jamaica', 'Japan', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', 'Korea North', 'Korea South', 'Kosovo', 'Kuwait', 'Kyrgyzstan', 'Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius', 'Mexico', 'Micronesia, Federated States of', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar', 'Namibia', 'Nauru', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'North Macedonia', 'Norway', 'Oman', 'Pakistan', 'Palau', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland', 'Portugal', 'Qatar', 'Romania', 'Russia', 'Rwanda', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Samoa', 'San Marino', 'Sao Tome and Principe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia', 'Solomon Islands', 'Somalia', 'South Africa', 'Spain', 'Sri Lanka', 'Sudan', 'Sudan, South', 'Suriname', 'Sweden', 'Switzerland', 'Syria', 'Taiwan', 'Tajikistan', 'Tanzania', 'Thailand', 'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan', 'Tuvalu', 'Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan', 'Vanuatu', 'Vatican City', 'Venezuela', 'Vietnam', 'Yemen', 'Zambia', 'Zimbabwe'],
     
     boysNames: ['Liam',    'Noah',        'Oliver',    'Elijah',    'James',
     'William', 'Benjamin',    'Lucas',     'Henry',     'Theodore',
@@ -147,15 +147,7 @@ const categories = {
         'Adaline',   'Hayden',   'Joanna',  'Jocelyn',    'Lena',
         'Evie',      'Juliet',   'Fiona',   'Cataleya',   'Angelina']
 }
-let theCorrectWord;
-const keyboard = document.getElementById("keyboard");
-const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-alphabet.forEach(elem => {
-    const btn = document.createElement("button");
-    btn.textContent = elem;
-    keyboard.appendChild(btn);
-    btn.addEventListener("click", () => select(elem));
-})
+
 const canvas = document.getElementById("canvas");
 const c = canvas.getContext("2d");
 
@@ -212,8 +204,41 @@ const attempts = {
         c.moveTo(200, 220);
         c.lineTo(160, 240);
         c.stroke();
+        youLose();
     },
 }
+let theCorrectWord;
+const steps = [attempts.firstAttempt, attempts.secondAttempt, attempts.thirdAttempt, attempts.fourthAttempt, attempts.fifthAttempt, attempts.sixthAttempt, attempts.seventhAttempt, attempts.eighthAttempt, attempts.ninthAttempt];
+const keyboard = document.getElementById("keyboard");
+const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", " "];
+alphabet.forEach(elem => {
+    const btn = document.createElement("button");
+    btn.textContent = elem;
+    keyboard.appendChild(btn);
+    btn.classList.add("key");
+    btn.addEventListener("click", () => {
+        if(!theCorrectWord) return;
+        let result = document.getElementById("word").textContent;
+        const resultArr = result.split("");
+        let atLeastHeGuessedOne = false;
+        console.log(elem, theCorrectWord)
+        for(let i =0; i< theCorrectWord.length; i++){
+            if(theCorrectWord[i] == elem || theCorrectWord[i] == elem.toUpperCase()){
+                atLeastHeGuessedOne = true;
+                // btn.style.display = "none";
+                resultArr[i] = theCorrectWord[i];
+            }
+        }
+        if(!atLeastHeGuessedOne){
+            steps[0]();
+            steps.shift();
+        }
+        result = "";
+        resultArr.forEach(elem => result += elem)
+        document.getElementById("word").textContent = result;
+        btn.disabled = "true";
+    });
+});
 const startDiv = document.getElementById("start");
 const startGameBtn = document.getElementById("startGame");
 const word = document.getElementById("word");
@@ -240,7 +265,7 @@ startGameBtn.addEventListener("click", () => {
         const toBeGuessed = categories.countriesNames[x];
         word.textContent = dash.repeat(toBeGuessed.length);
         theCorrectWord = toBeGuessed;
-    })
+    });
 })
 function select(selectedLetter){
     let result = document.getElementById("word").textContent;
@@ -256,4 +281,11 @@ function select(selectedLetter){
     result = "";
     resultArr.forEach(elem => result += elem)
     document.getElementById("word").textContent = result;
+}
+document.getElementById("restartGame").addEventListener("click", ()=> location.reload());
+function youLose(){
+    alert("You lost! Try Again");
+    Array.from(document.getElementsByClassName("key")).forEach(elem => {
+        elem.disabled = "true";
+    })   
 }
