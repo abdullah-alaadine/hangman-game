@@ -195,7 +195,13 @@ const attempts = {
     eighthAttempt: () => {
         c.beginPath();
         c.moveTo(200, 220);
-        c.lineTo(240, 250);
+        c.lineTo(240, 240);
+        c.stroke();
+    },
+    ninthAttempt: () => {
+        c.beginPath();
+        c.moveTo(200, 220);
+        c.lineTo(160, 240);
         c.stroke();
     },
 }
@@ -207,3 +213,4 @@ attempts.fifthAttempt()
 attempts.sixthAttempt()
 attempts.seventhAttempt()
 attempts.eighthAttempt()
+attempts.ninthAttempt()
