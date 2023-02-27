@@ -169,7 +169,13 @@ const attempts = {
         c.lineTo(200, 100);
         c.stroke();
     },
+    fourthAttempt: () => {
+        c.beginPath();
+        c.arc(200, 120, 20, 0, Math.PI * 2);
+        c.stroke();
+    },
 }
-// attempts.firstAttempt()
-// attempts.secondAttempt()
-// attempts.thirdAttempt()
+attempts.firstAttempt()
+attempts.secondAttempt()
+attempts.thirdAttempt()
+attempts.fourthAttempt();
