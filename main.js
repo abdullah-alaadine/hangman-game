@@ -147,12 +147,14 @@ const categories = {
         'Adaline',   'Hayden',   'Joanna',  'Jocelyn',    'Lena',
         'Evie',      'Juliet',   'Fiona',   'Cataleya',   'Angelina']
 }
+let theCorrectWord;
 const keyboard = document.getElementById("keyboard");
 const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 alphabet.forEach(elem => {
     const btn = document.createElement("button");
+    btn.textContent = elem;
     keyboard.appendChild(btn);
-    btn.addEventListener("click", select);
+    btn.addEventListener("click", () => select(elem));
 })
 const canvas = document.getElementById("canvas");
 const c = canvas.getContext("2d");
@@ -232,12 +234,26 @@ startGameBtn.addEventListener("click", () => {
     div.appendChild(boysNames);
     div.appendChild(girlsName);
     startDiv.appendChild(div);
-    const dash = "__\t"
+    const dash = "_"
     countriesNames.addEventListener("click", () => {
         const x = Math.floor(Math.random() * categories.countriesNames.length);
         const toBeGuessed = categories.countriesNames[x];
         word.textContent = dash.repeat(toBeGuessed.length);
+        theCorrectWord = toBeGuessed;
     })
 })
-
-function select(){}
+function select(selectedLetter){
+    let result = document.getElementById("word").textContent;
+    const resultArr = result.split("");
+    let atLeastHeGuessedOne = false;
+    console.log(selectedLetter, theCorrectWord)
+    for(let i =0; i< theCorrectWord.length; i++){
+        if(theCorrectWord[i] == selectedLetter || theCorrectWord[i] == selectedLetter.toUpperCase()){
+            atLeastHeGuessedOne = true;
+            resultArr[i] = theCorrectWord[i];
+        }
+    }
+    result = "";
+    resultArr.forEach(elem => result += elem)
+    document.getElementById("word").textContent = result;
+}

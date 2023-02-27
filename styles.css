@@ -52,3 +52,16 @@ button:hover{
     background-color: rgb(77, 13, 13);
     color: wheat;
 }
+.keyboard{
+    width: 80%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+.keyboard button{
+    height: 30px;
+    width: 30px;
+}
+.keyboard button:hover{
+    transform: translateY(0px);
+}
