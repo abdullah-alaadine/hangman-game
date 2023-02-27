@@ -147,10 +147,8 @@ const categories = {
         'Adaline',   'Hayden',   'Joanna',  'Jocelyn',    'Lena',
         'Evie',      'Juliet',   'Fiona',   'Cataleya',   'Angelina']
 }
-
 const canvas = document.getElementById("canvas");
 const c = canvas.getContext("2d");
-
 const attempts = {
     firstAttempt: () => {
         c.beginPath();
@@ -265,6 +263,27 @@ startGameBtn.addEventListener("click", () => {
         const toBeGuessed = categories.countriesNames[x];
         word.textContent = dash.repeat(toBeGuessed.length);
         theCorrectWord = toBeGuessed;
+        countriesNames.disabled = "true";
+        boysNames.disabled = "true";
+        girlsName.disabled = "true";
+    });
+    girlsName.addEventListener("click", () => {
+        const x = Math.floor(Math.random() * categories.countriesNames.length);
+        const toBeGuessed = categories.girlsName[x];
+        word.textContent = dash.repeat(toBeGuessed.length);
+        theCorrectWord = toBeGuessed;
+        countriesNames.disabled = "true";
+        boysNames.disabled = "true";
+        girlsName.disabled = "true";
+    });
+    boysNames.addEventListener("click", () => {
+        const x = Math.floor(Math.random() * categories.countriesNames.length);
+        const toBeGuessed = categories.boysNames[x];
+        word.textContent = dash.repeat(toBeGuessed.length);
+        theCorrectWord = toBeGuessed;
+        countriesNames.disabled = "true";
+        boysNames.disabled = "true";
+        girlsName.disabled = "true";
     });
 })
 function select(selectedLetter){
