@@ -218,7 +218,6 @@ alphabet.forEach(elem => {
         if(!theCorrectWord) return;
         let result = document.getElementById("word").textContent;
         const resultArr = result.split("");
-        result == theCorrectWord ? youWin(): null;
         let atLeastHeGuessedOne = false;
         console.log(elem, theCorrectWord)
         for(let i =0; i< theCorrectWord.length; i++){
@@ -234,6 +233,7 @@ alphabet.forEach(elem => {
         result = "";
         resultArr.forEach(elem => result += elem)
         document.getElementById("word").textContent = result;
+        result == theCorrectWord ? youWin(): null;
         btn.disabled = "true";
     });
 });
@@ -286,21 +286,6 @@ startGameBtn.addEventListener("click", () => {
         girlsName.disabled = "true";
     });
 })
-function select(selectedLetter){
-    let result = document.getElementById("word").textContent;
-    const resultArr = result.split("");
-    let atLeastHeGuessedOne = false;
-    console.log(selectedLetter, theCorrectWord)
-    for(let i =0; i< theCorrectWord.length; i++){
-        if(theCorrectWord[i] == selectedLetter || theCorrectWord[i] == selectedLetter.toUpperCase()){
-            atLeastHeGuessedOne = true;
-            resultArr[i] = theCorrectWord[i];
-        }
-    }
-    result = "";
-    resultArr.forEach(elem => result += elem)
-    document.getElementById("word").textContent = result;
-}
 document.getElementById("restartGame").addEventListener("click", ()=> location.reload());
 function youLose(){
     alert("You lost! Try Again");
