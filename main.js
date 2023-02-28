@@ -219,7 +219,6 @@ alphabet.forEach(elem => {
         let result = document.getElementById("word").textContent;
         const resultArr = result.split("");
         let atLeastHeGuessedOne = false;
-        console.log(elem, theCorrectWord)
         for(let i =0; i< theCorrectWord.length; i++){
             if(theCorrectWord[i] == elem || theCorrectWord[i] == elem.toUpperCase()){
                 atLeastHeGuessedOne = true;
